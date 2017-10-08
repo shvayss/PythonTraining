@@ -1,12 +1,12 @@
-#Exercise 7: More Printing
+# Exercise 7: More Printing
 
 # -*- coding: utf-8 -*-
-print "Mary had a little lamb."
+print("Mary had a little lamb.")
 # insert substring to the string and print it
-print "Its fleece was white as %s." % 'snow'
-print "And everywhere that Mary went."
+print("Its fleece was white as %s." % 'snow')
+print("And everywhere that Mary went.")
 # print the dot ten times
-print "." * 10 # what'd that do?
+print("." * 10)  # what'd that do?
 
 end1 = "C"
 end2 = "h"
@@ -22,5 +22,5 @@ end11 = "e"
 end12 = "r"
 
 # whatch that coma at the end. try removing it to see what happens
-print end1 + end2 + end3 + end4 + end5 + end6,
-print end7 + end8 + end9 + end10 + end11 + end12
+print(end1 + end2 + end3 + end4 + end5 + end6, end=" ")
+print(end7 + end8 + end9 + end10 + end11 + end12)
