@@ -1,10 +1,10 @@
-#Exercise 12: Prompting People
+# Exercise 12: Prompting People
 
 # -*- coding: utf-8 -*-
 
-age = raw_input ("How old are you? ")
-height = raw_input ("How tall are you? ")
-weight = raw_input ("How much do you weight? ")
+age = input("How old are you? ")
+height = input("How tall are you (cm)? ")
+weight = input("How much do you weight (kg)? ")
 
-print "So you're %r old, %r tall and %r heavy." % (
-	age, height, weight)
+print("So you're %r years old, %s cm tall and %s kg heavy." % (
+    age, height, weight))

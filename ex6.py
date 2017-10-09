@@ -13,14 +13,14 @@ y = "Those who know %s and those who %s." % (binary, do_not)
 print(x)
 print(y)
 
-# use formater for debugging
+# use formatter for debugging
 print("I said: %r." % x)
-# use string formater
+# use string formatter
 print("I also said: '%s'." % y)
 
 # define boolean variable
 hilarious = False
-# Insert boolean variable to string varible
+# Insert boolean variable to string variable
 joke_evaluation = "Isn't that joke so funny?! %r"
 
 print(joke_evaluation % hilarious)
@@ -28,5 +28,5 @@ print(joke_evaluation % hilarious)
 w = "This is the left side of..."
 e = "a string with right side"
 
-# Concatanate string variables
+# Concatenate string variables
 print(w + e)

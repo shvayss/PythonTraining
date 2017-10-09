@@ -27,5 +27,4 @@ print("%g inch = %g cm" % (t1, inchcm * t1))
 print("%g lbs = %g kgs" % (t2, lbkg * t2))
 
 # this line is tricky, try to get it exactly right
-print("If I add %d, %d and %d I get %d." % (
-	age, height, weight, age + height + weight))
+print("If I add %d, %d and %d I get %d." % (age, height, weight, age + height + weight))
