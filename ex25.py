@@ -1,39 +1,63 @@
-#Exercise 25: Even More Practice
+# Exercise 25: Even More Practice
+
 
 # -*- coding: utf-8 -*-
-
 def break_words(stuff):
-	"""This function will break words for us."""
-	words = stuff.split(' ')
-	return words
-	
-def sort_word(words):
-	"""Sorts the words."""
-	return sorted(words)
-	
+    """This function will break words for us."""
+    words = stuff.split(' ')
+    return words
+
+
+def sort_words(words):
+    """Sorts the words."""
+    return sorted(words)
+
+
 def print_first_word(words):
-	"""Prints the first word after popping it off."""
-	word = words.pop(0)
-	print word
-	
+    """Prints the first word after popping it off."""
+    word = words.pop(0)
+    print(word)
+
+
 def print_last_word(words):
-	"""Prints the last word after popping it off."""
-	word = words.pop(-1)
-	print word
-	
+    """Prints the last word after popping it off."""
+    word = words.pop(-1)
+    print(word + "\n")
+
+
 def sort_sentence(sentence):
-	"""Takes in a full sentence and returns the sorted words."""
-	words = break_words(sentence)
-	return sort_words(words)
-	
+    """Takes in a full sentence and returns the sorted words."""
+    words = break_words(sentence)
+    return sort_words(words)
+
+
 def print_first_and_last(sentence):
-	"""Prints the first and last words of the sentence."""
-	words = break_words(sentence)
-	print_first_word(words)
-	print_last_word(words)
-	
-def print_first_and_last_sorted():
-	"""Sorts the words then prints the first and last one."""
-	words = sort_sentence(sentence)
-	print_firts_word(words)
-	print_last_word(words)
+    """Prints the first and last words of the sentence."""
+    words = break_words(sentence)
+    print_first_word(words)
+    print_last_word(words)
+
+
+def print_first_and_last_sorted(sentence):
+    """Sorts the words then prints the first and last one."""
+    words = sort_sentence(sentence)
+    print_first_word(words)
+    print_last_word(words)
+
+
+sentence = "All good things come to those who wait."
+
+words = break_words(sentence)
+sorted_words = sort_words(words)
+
+print_first_word(words)
+print_last_word(words)
+
+print_first_word(sorted_words)
+print_last_word(sorted_words)
+
+sorted_words = sort_sentence(sentence)
+print(sorted_words, "\n")
+
+print_first_and_last(sentence)
+print_first_and_last_sorted(sentence)
